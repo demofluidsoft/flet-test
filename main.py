@@ -22,8 +22,8 @@ def main(page: ft.Page):
                 counter,
                 ft.Row(
                     [
-                        ft.Button(text="+", on_click=increment, variant=ft.ButtonVariant.ELEVATED),
-                        ft.Button(text="-", on_click=decrement, variant=ft.ButtonVariant.ELEVATED),
+                        ft.Button(text="+", on_click=increment),
+                        ft.Button(text="-", on_click=decrement),
                     ],
                     alignment=ft.MainAxisAlignment.CENTER
                 )
