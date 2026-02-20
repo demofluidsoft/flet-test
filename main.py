@@ -35,4 +35,4 @@ def main(page: ft.Page):
 
 # Get port from Render environment
 port = int(os.environ.get("PORT", 8550))  # default fallback 8550
-ft.run(target=main, port=port, web=True)
+ft.run(target=main, port=port)
