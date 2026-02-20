@@ -1,3 +1,4 @@
+import os
 import flet as ft
 
 def main(page: ft.Page):
@@ -32,5 +33,6 @@ def main(page: ft.Page):
         )
     )
 
-# ✅ Use run() now
-ft.run(target=main)
+# Get port from Render environment
+port = int(os.environ.get("PORT", 8550))  # default fallback 8550
+ft.run(target=main, port=port, web=True)
